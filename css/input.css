@@ -1,0 +1,52 @@
+.profile-image {
+    animation: float-circle 8s ease-in-out infinite;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform-origin: center center;
+}
+
+@keyframes float-circle {
+    0% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+    25% {
+        transform: translateY(-10px) translateX(5px) scale(1.03);
+    }
+    50% {
+        transform: translateY(0) translateX(0) scale(1.05);
+    }
+    75% {
+        transform: translateY(10px) translateX(-5px) scale(1.03);
+    }
+    100% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+}
+
+.profile-image:hover {
+    transform: scale(1.1) rotate(2deg);
+    transition: all 0.3s ease-in-out;
+}
+
+.skills-carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: #183B4E;
+    border: 2px solid #DDA853;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide {
+    min-width: 100%;
+    padding: 1.5rem;
+    background: #183B4E;
+    border-radius: 0.5rem;
+    transition: transform 0.5s ease;
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+}
